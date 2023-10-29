@@ -1,10 +1,10 @@
 'use client';
-
+import type { Route } from 'next';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useCurrentLocale } from 'next-i18n-router/client';
-import i18nConfig from '@/i18nConfig';
 import { ChangeEvent } from 'react';
+import i18nConfig from '@/i18nConfig';
 
 export default function LanguageChanger() {
   const router = useRouter();
@@ -21,15 +21,10 @@ export default function LanguageChanger() {
     const expires = '; expires=' + date.toUTCString();
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
 
-    if (
-      currentLocale === i18nConfig.defaultLocale &&
-      !i18nConfig.prefixDefault
-    ) {
-      router.push('/' + newLocale + currentPathname);
+    if (currentLocale === i18nConfig.defaultLocale && !i18nConfig.prefixDefault) {
+      router.push(('/' + newLocale + currentPathname) as Route);
     } else {
-      router.push(
-        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
-      );
+      router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`) as Route);
     }
 
     router.refresh();
@@ -37,10 +32,10 @@ export default function LanguageChanger() {
 
   return (
     <select onChange={handleChange} value={currentLocale}>
-      <option value="en">English</option>
-      <option value="es">Spanish</option>
-      <option value="ja">Japanese</option>
-      <option value="zh">Chinese</option>
+      <option value='en'>English</option>
+      <option value='es'>Spanish</option>
+      <option value='ja'>Japanese</option>
+      <option value='zh'>Chinese</option>
     </select>
   );
 }

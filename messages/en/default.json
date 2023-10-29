@@ -1,1 +1,9 @@
-{"homepage_header":"Welcome to Eagle Project!","homepage_subheader":"A Game Engine for Academic Large-scale Experiments"}
+{
+  "back_to_top": "Back to top page",
+  "error_code_404": "404",
+  "error_code_500": "500",
+  "homepage_header": "Welcome to Eagle Project!",
+  "homepage_subheader": "A Game Engine for Academic Large-scale Experiments",
+  "error_description_404": "This page could not be found.",
+  "error_description_500": "An internal server error has occurred."
+}

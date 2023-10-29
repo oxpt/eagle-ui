@@ -1,1 +1,9 @@
-{"homepage_header":"欢迎来到鹰计划！","homepage_subheader":"用于学术大规模实验的游戏引擎"}
+{
+  "back_to_top": "返回首页",
+  "error_code_404": "404",
+  "error_code_500": "500",
+  "homepage_header": "欢迎来到鹰计划！",
+  "homepage_subheader": "用于学术大规模实验的游戏引擎",
+  "error_description_404": "无法找到该页面。",
+  "error_description_500": "发生内部服务器错误。"
+}

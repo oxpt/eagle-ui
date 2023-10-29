@@ -1,1 +1,9 @@
-{"homepage_header":"¡Bienvenidos al Proyecto Águila!","homepage_subheader":"Un motor de juego para experimentos académicos a gran escala"}
+{
+  "back_to_top": "Volver a la página superior",
+  "error_code_404": "404",
+  "error_code_500": "500",
+  "homepage_header": "¡Bienvenidos al Proyecto Águila!",
+  "homepage_subheader": "Un motor de juego para experimentos académicos a gran escala",
+  "error_description_404": "No se pudo encontrar esta página.",
+  "error_description_500": "Se ha producido un error interno del servidor."
+}

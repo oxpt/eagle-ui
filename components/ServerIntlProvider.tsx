@@ -1,12 +1,12 @@
 'use client';
 
-import { IntlProvider, MessageFormatElement } from 'react-intl';
 import { ReactNode } from 'react';
+import { IntlProvider, MessageFormatElement } from 'react-intl';
 
 export default function ServerIntlProvider({
   messages,
   locale,
-  children
+  children,
 }: {
   messages: Record<string, MessageFormatElement[]> | Record<string, string>;
   locale: string;

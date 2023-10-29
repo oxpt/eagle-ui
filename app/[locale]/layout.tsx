@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '@/app/globals.css'
-import i18nConfig from '@/i18nConfig';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import '@/app/globals.css';
 import { ReactNode } from 'react';
+import i18nConfig from '@/i18nConfig';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Eagle UI',
@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 };
 
 export function generateStaticParams() {
-  return i18nConfig.locales.map(locale => ({ locale }));
+  return i18nConfig.locales.map((locale) => ({ locale }));
 }
 
 export default function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
   children: ReactNode;
   params: { locale: string };
@@ -26,5 +26,5 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

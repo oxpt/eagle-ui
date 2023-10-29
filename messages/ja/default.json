@@ -1,1 +1,9 @@
-{"homepage_header":"イーグルプロジェクトへようこそ！","homepage_subheader":"大規模学術実験用プラットフォーム"}
+{
+  "back_to_top": "トップページへ戻る",
+  "error_code_404": "404",
+  "error_code_500": "500",
+  "homepage_header": "イーグルプロジェクトへようこそ！",
+  "homepage_subheader": "大規模学術実験用プラットフォーム",
+  "error_description_404": "このページは見つかりませんでした。",
+  "error_description_500": "サーバー内部でエラーが発生しました。"
+}

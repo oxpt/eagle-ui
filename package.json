@@ -4,10 +4,10 @@
   "description": "A Game Engine for Academic Large-scale Experiments",
   "private": true,
   "scripts": {
-    "dev": "i18nexus pull && next dev",
+    "dev": "i18nexus pull && npm run lint && next dev",
     "build": "i18nexus pull && next build",
     "start": "i18nexus pull && next start",
-    "lint": "next lint"
+    "lint": "next lint --fix && prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
     "next": "14.0.0",
@@ -23,8 +23,10 @@
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
+    "eslint-config-prettier": "^9.0.0",
     "i18nexus-cli": "^3.3.0",
     "postcss": "^8",
+    "prettier": "3.0.3",
     "tailwindcss": "^3",
     "typescript": "^5"
   }
