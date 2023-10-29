@@ -11,15 +11,15 @@ interface Params {
 }
 
 export default async function Home({ params: { locale }}: Params) {
-  const intl = await getIntl(locale, 'default');
+  const intl = await getIntl(locale, "default");
 
   return (
-    <main>
-      <h1>{intl.formatMessage({ id: 'homepage_header' })}</h1>
-      <ServerIntlProvider messages={intl.messages} locale={intl.locale}>
-        <ExampleClientComponent />
-        <LanguageChanger />
-      </ServerIntlProvider>
-    </main>
+    <ServerIntlProvider messages={intl.messages} locale={intl.locale}>
+        <main>
+            <h1>{intl.formatMessage({ id: 'homepage_header' })}</h1>
+            <ExampleClientComponent />
+            <LanguageChanger />
+        </main>
+    </ServerIntlProvider>
   );
 }
