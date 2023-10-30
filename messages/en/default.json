@@ -1,9 +1,17 @@
 {
+  "top_join": "Join",
+  "head_title": "XEE.JP",
   "back_to_top": "Back to top page",
+  "head_author": "Ryohei HAYASHI",
+  "head_keyword": "'Economics', 'Experiment', 'Game', 'Education', 'Class', 'School', 'Platform'",
+  "current_locale": "English",
   "error_code_404": "404",
   "error_code_500": "500",
   "homepage_header": "Welcome to Eagle Project!",
+  "head_description": "A Game Engine for Academic Large-scale Experiments",
+  "top_no_room_name": "That room name is not registered.",
   "homepage_subheader": "A Game Engine for Academic Large-scale Experiments",
+  "top_enter_room_name": "Enter room name",
   "error_description_404": "This page could not be found.",
   "error_description_500": "An internal server error has occurred."
 }

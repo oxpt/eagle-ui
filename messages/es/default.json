@@ -1,9 +1,17 @@
 {
+  "top_join": "Unirse",
+  "head_title": "XEE.JP",
   "back_to_top": "Volver a la página superior",
+  "head_author": "Ryohei HAYASHI",
+  "head_keyword": "'Economía', 'Experimento', 'Juego', 'Educación', 'Clase', 'Escuela', 'Plataforma'",
+  "current_locale": "Español",
   "error_code_404": "404",
   "error_code_500": "500",
   "homepage_header": "¡Bienvenidos al Proyecto Águila!",
+  "head_description": "Un motor de juego para experimentos académicos a gran escala",
+  "top_no_room_name": "El nombre de esa habitación no está registrado.",
   "homepage_subheader": "Un motor de juego para experimentos académicos a gran escala",
+  "top_enter_room_name": "Introduce el nombre de la habitación",
   "error_description_404": "No se pudo encontrar esta página.",
   "error_description_500": "Se ha producido un error interno del servidor."
 }

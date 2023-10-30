@@ -1,9 +1,17 @@
 {
+  "top_join": "加入",
+  "head_title": "XEE.JP",
   "back_to_top": "返回首页",
+  "head_author": "林良平",
+  "head_keyword": "‘经济’,‘实验’,‘游戏’,‘教育’,‘课堂’,‘学校’,‘平台’",
+  "current_locale": "中文 (繁體)",
   "error_code_404": "404",
   "error_code_500": "500",
   "homepage_header": "欢迎来到鹰计划！",
+  "head_description": "用于学术大规模实验的游戏引擎",
+  "top_no_room_name": "该房间名称未注册。",
   "homepage_subheader": "用于学术大规模实验的游戏引擎",
+  "top_enter_room_name": "输入房间名称",
   "error_description_404": "无法找到该页面。",
   "error_description_500": "发生内部服务器错误。"
 }

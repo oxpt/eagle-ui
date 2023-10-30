@@ -6,12 +6,11 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
-interface Props {
+type Props = {
   error: Error & { digest?: string };
-  reset: () => void;
-}
+};
 
-export default function Error({ error, reset }: Props) {
+export default function Error({ error }: Props) {
   const { formatMessage } = useIntl();
   useEffect(() => {
     // Log the error to an error reporting service

@@ -10,11 +10,15 @@
     "lint": "next lint --fix && prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "flag-icons": "^6.11.2",
     "next": "14.0.0",
     "next-i18n-router": "^5.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-intl": "^6.5.1"
+    "react-intl": "^6.5.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",

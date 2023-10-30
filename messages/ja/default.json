@@ -1,9 +1,17 @@
 {
+  "top_join": "参加",
+  "head_title": "XEE.JP",
   "back_to_top": "トップページへ戻る",
+  "head_author": "林良平",
+  "head_keyword": "'経済','実験','ゲーム','教育','授業','学校','プラットフォーム'",
+  "current_locale": "日本語",
   "error_code_404": "404",
   "error_code_500": "500",
   "homepage_header": "イーグルプロジェクトへようこそ！",
+  "head_description": "大規模実験用ゲームエンジン",
+  "top_no_room_name": "そのルーム名は登録されていません。",
   "homepage_subheader": "大規模学術実験用プラットフォーム",
+  "top_enter_room_name": "ルーム名を入力",
   "error_description_404": "このページは見つかりませんでした。",
   "error_description_500": "サーバー内部でエラーが発生しました。"
 }

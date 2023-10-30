@@ -3,14 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import getIntl from '@/app/[locale]/intl';
 
-export default async function NotFoundCatchAll({
-  params: { locale, notFound },
-}: {
+type Params = {
   params: {
     locale: string;
-    notFound: string;
   };
-}) {
+};
+
+export default async function NotFoundCatchAll({ params: { locale } }: Params) {
   const intl = await getIntl(locale, 'default');
   return (
     <div className='text-center mb-[15svh]'>
