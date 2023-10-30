@@ -78,7 +78,7 @@ export default async function Top({ locale, intl }: Props) {
             />
             <input type='hidden' name='locale' id='language' required value={locale} />
           </div>
-          <div className='ml-2 flex-shrink-0'>
+          <div className='ml-3 flex-shrink-0'>
             <SubmitButton label={intl.formatMessage({ id: 'top_join' })} />
           </div>
         </form>

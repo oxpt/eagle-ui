@@ -14,7 +14,7 @@ const schema = z.object({
   search_params: z.string(),
 });
 
-async function localeChange(formData: FormData) {
+export async function localeChange(formData: FormData) {
   'use server';
 
   const parsed = schema.safeParse({
@@ -46,7 +46,7 @@ type Props = {
   intl: IntlShape<string>;
 };
 
-export default async function Header({ locale, intl }: Props) {
+export default function Header({ locale, intl }: Props) {
   return (
     <header>
       <div className='mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8'>
