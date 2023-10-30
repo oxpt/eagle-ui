@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import '@/app/globals.css';
 import { ReactNode } from 'react';
 import getIntl from '@/app/[locale]/intl';
+import CookieDialog from '@/components/CookieDialog';
+import Feedback from '@/components/Feedback';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ServerIntlProvider from '@/components/ServerIntlProvider';
@@ -36,6 +38,7 @@ export async function generateMetadata({ params: { locale } }: Params): Promise<
     icons: {
       icon: '/favicon.ico',
     },
+    other: { google: "notranslate" },
   };
 }
 
@@ -52,6 +55,8 @@ export default async function RootLayout({
       <body className={inter.className}>
         <ServerIntlProvider messages={intl.messages} locale={intl.locale}>
           <Header locale={locale} intl={intl} />
+          <Feedback />
+          <CookieDialog />
           {children}
           <Footer intl={intl} />
         </ServerIntlProvider>

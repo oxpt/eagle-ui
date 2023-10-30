@@ -1,5 +1,6 @@
 'use client';
 
+import { forwardRef } from "react";
 import { useFormStatus } from 'react-dom';
 
 const spinner = (readOnly: string) => {
@@ -20,9 +21,11 @@ type Props = {
   className?: string;
   classNamePending?: string;
 };
+export type Ref = HTMLButtonElement;
 
-export default function SubmitButton({ label, className, classNamePending }: Props) {
+const SubmitButton = forwardRef<Ref, Props>((props, ref) => {
   const { pending } = useFormStatus();
+  const {label, className, classNamePending} = props;
   return (
     <button
       type='submit'
@@ -36,8 +39,13 @@ export default function SubmitButton({ label, className, classNamePending }: Pro
           ? className
           : 'inline-flex items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
       }
+      ref={ref}
     >
       {pending ? spinner(label) : label}
     </button>
   );
-}
+})
+
+SubmitButton.displayName = 'SubmitButton';
+
+export default SubmitButton;

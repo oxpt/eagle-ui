@@ -28,7 +28,7 @@ export default function JoinRoomDialogBase({
   if (roomName !== null) {
     return (
       <Transition.Root show={true} as={Fragment}>
-        <Dialog as='div' className='relative z-10' initialFocus={cancelButtonRef} onClose={onClose}>
+        <Dialog as='div' className='relative z-10' initialFocus={cancelButtonRef} onClose={() => onClose()}>
           <Transition.Child
             as={Fragment}
             enter='ease-out duration-300'
@@ -92,7 +92,7 @@ export default function JoinRoomDialogBase({
                       <button
                         type='button'
                         className='inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-                        onClick={onClose}
+                        onClick={() => onClose()}
                         ref={cancelButtonRef}
                       >
                         {formatMessage({ id: 'join_dialog_cancel' })}

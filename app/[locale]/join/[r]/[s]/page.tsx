@@ -1,5 +1,4 @@
 import getIntl from '@/app/[locale]/intl';
-import Top from '@/components/Top';
 
 type Params = {
   params: {
