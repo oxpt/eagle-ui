@@ -1,9 +1,9 @@
+import { IntlShape } from '@formatjs/intl';
 import { KeyIcon } from '@heroicons/react/20/solid';
 import { cookies } from 'next/headers';
 import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import { z } from 'zod';
-import getIntl from '@/app/[locale]/intl';
 import SubmitButton from '@/components/SubmitButton';
 import i18nConfig from '@/i18nConfig';
 
@@ -41,11 +41,11 @@ async function joinRoom(formData: FormData) {
 
 type Props = {
   locale: string;
+  intl: IntlShape<string>;
 };
 
-export default async function Top({ locale }: Props) {
+export default async function Top({ locale, intl }: Props) {
   const roomName = cookies().get('roomName')?.value;
-  const intl = await getIntl(locale, 'default');
 
   return (
     <div className='mx-auto items-center'>

@@ -3,7 +3,9 @@ import { Inter } from 'next/font/google';
 import '@/app/globals.css';
 import { ReactNode } from 'react';
 import getIntl from '@/app/[locale]/intl';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import ServerIntlProvider from '@/components/ServerIntlProvider';
 import i18nConfig from '@/i18nConfig';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -48,8 +50,11 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={getDirection(locale)}>
       <body className={inter.className}>
-        <Header locale={locale} intl={intl} />
-        {children}
+        <ServerIntlProvider messages={intl.messages} locale={intl.locale}>
+          <Header locale={locale} intl={intl} />
+          {children}
+          <Footer intl={intl} />
+        </ServerIntlProvider>
       </body>
     </html>
   );
