@@ -38,7 +38,7 @@ export async function generateMetadata({ params: { locale } }: Params): Promise<
     icons: {
       icon: '/favicon.ico',
     },
-    other: { google: "notranslate" },
+    other: { google: 'notranslate' },
   };
 }
 

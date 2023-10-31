@@ -88,7 +88,7 @@ export default function JoinRoomDialogBase({
                         </div>
                       </div>
                     </div>
-                    <div className='mt-5 sm:mt-6 sm:gap-3 inline-flex justify-end w-full'>
+                    <div className='mt-5 sm:mt-6 gap-3 inline-flex justify-end w-full'>
                       <button
                         type='button'
                         className='inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'

@@ -24,9 +24,9 @@ export async function localeChange(formData: FormData) {
     search_params: formData.get('search_params'),
   });
 
-  const days = 30;
   const date = new Date();
-  date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+  const expires: number = process.env.COOKIE_EXPIRES_DAY ? Number(process.env.COOKIE_EXPIRES_DAY) : 24 * 60 * 60 * 1000;
+  date.setTime(date.getTime() + expires);
   if (!parsed.success) {
     cookies().set('NEXT_LOCALE', i18nConfig.defaultLocale, { expires: date, path: '/' });
     redirect('/');

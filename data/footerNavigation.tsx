@@ -8,7 +8,7 @@ export const footerNavigation = {
     { name: 'awards', href: '#' },
   ],
   conductor: [
-    { name: 'create', href: '/createroom' },
+    { name: 'create', href: '/create_room' },
     { name: 'manage', href: '#' },
     { name: 'account', href: '#' },
     { name: 'research', href: '#' },

@@ -28,9 +28,11 @@ async function joinRoom(formData: FormData) {
   if (!parsed.success) {
     cookies().delete('roomName');
   } else {
-    const days = 1;
     const date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    const expires: number = process.env.COOKIE_EXPIRES_DAY
+      ? Number(process.env.COOKIE_EXPIRES_DAY)
+      : 24 * 60 * 60 * 1000;
+    date.setTime(date.getTime() + expires);
     let newLocale = parsed.data.locale;
     if (i18nConfig.locales.indexOf(parsed.data.locale) < 0) newLocale = i18nConfig.defaultLocale;
     cookies().set('roomName', parsed.data.roomName, { expires: date, path: '/' });

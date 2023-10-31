@@ -1,6 +1,6 @@
 'use client';
 
-import { forwardRef } from "react";
+import { forwardRef } from 'react';
 import { useFormStatus } from 'react-dom';
 
 const spinner = (readOnly: string) => {
@@ -25,7 +25,7 @@ export type Ref = HTMLButtonElement;
 
 const SubmitButton = forwardRef<Ref, Props>((props, ref) => {
   const { pending } = useFormStatus();
-  const {label, className, classNamePending} = props;
+  const { label, className, classNamePending } = props;
   return (
     <button
       type='submit'
@@ -44,7 +44,7 @@ const SubmitButton = forwardRef<Ref, Props>((props, ref) => {
       {pending ? spinner(label) : label}
     </button>
   );
-})
+});
 
 SubmitButton.displayName = 'SubmitButton';
 
