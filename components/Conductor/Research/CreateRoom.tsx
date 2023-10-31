@@ -14,7 +14,7 @@ const mode = [
   {
     name: 'research_mode',
     id: 'research',
-    href: '/research/restoration',
+    href: '/conductor/research/restoration',
     description: 'research_mode_description',
     mostPopular: false,
   },
@@ -93,7 +93,7 @@ export default async function CreateRoom({ intl }: Props) {
   return (
     <div className='isolate overflow-hidden'>
       <div className='relative'>
-        <div className='mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8'>
+        <div className='py-6 px-4 sm:px-6 lg:px-8 sm:py-3 bg-white'>
           {/* Feature comparison (up to lg) */}
           <section aria-labelledby='mobile-comparison-heading' className='lg:hidden'>
             <h2 id='mobile-comparison-heading' className='sr-only'>

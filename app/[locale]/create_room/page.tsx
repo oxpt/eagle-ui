@@ -13,8 +13,8 @@ export default async function Page({ params: { locale } }: Params) {
   return (
     <main className='mx-auto max-w-7xl'>
       <Title
-        title={intl.formatMessage({ id: 'title_title' })}
-        description={intl.formatMessage({ id: 'title_description' })}
+        title={intl.formatMessage({ id: 'create_room_title_title' })}
+        description={intl.formatMessage({ id: 'create_room_title_description' })}
       />
       <CreateRoom intl={intl} />
     </main>
