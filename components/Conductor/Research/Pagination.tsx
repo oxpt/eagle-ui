@@ -56,7 +56,7 @@ export default function Pagination({ steps, current_step }: Props) {
                   {index + 1}
                 </Link>
               )}
-              <div className='absolute left-1/2 -translate-x-1/2 invisible group-hover/page:visible text-center z-10 mt-2 rounded bg-white px-2 py-1 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'>
+              <div className='absolute left-1/2 -translate-x-1/2  invisible group-hover/page:visible group-hover/page:whitespace-nowrap text-center z-10 mt-2 rounded bg-white px-2 py-1 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'>
                 {formatMessage({ id: step.name })}
               </div>
             </div>
