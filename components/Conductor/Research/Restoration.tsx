@@ -12,7 +12,6 @@ import {
 } from '@heroicons/react/20/solid';
 import { FolderPlusIcon, CloudArrowUpIcon } from '@heroicons/react/24/outline';
 import { toSvg } from 'jdenticon';
-import Link from 'next/link';
 import { Fragment } from 'react';
 import { useIntl } from 'react-intl';
 
@@ -251,7 +250,7 @@ export default function Restoration() {
               <div className='-mt-px flex divide-x divide-gray-200'>
                 <div className='flex w-0 flex-1 hover:bg-indigo-600 group/delete'>
                   <a
-                    href={`mailto:pey@ryohei.info`}
+                    href={`mailto:mail@example.com`}
                     className='relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm text-gray-900 group-hover/delete:text-white group-hover/delete:font-semibold'
                   >
                     <TrashIcon className='h-5 w-5 text-gray-400 group-hover/delete:text-white' aria-hidden='true' />

@@ -6,7 +6,7 @@ export const atomNumber = (initialValue: number) => ({ init: initialValue });
 export const atomBoolean = (initialValue: boolean) => ({ init: initialValue });
 
 export const alartCountAtom = atomNumber(0);
-export const alartOpenAtom = atomBoolean(true);
+export const alartOpenAtom = atomBoolean(false);
 export const experimentEnableAtom = atomBoolean(false);
 export const openCookieAtom = atomBoolean(false);
 

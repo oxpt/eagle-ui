@@ -18,7 +18,7 @@ export default async function Page({ params: { locale } }: Params) {
         title={intl.formatMessage({ id: 'consent_title_title' })}
         description={intl.formatMessage({ id: 'consent_title_description' })}
       />
-      <Consent intl={intl} />
+      <Consent locale={locale} />
       <Pagination steps={research_setting_steps} current_step='consent' />
     </main>
   );

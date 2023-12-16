@@ -18,7 +18,7 @@ export default async function Page({ params: { locale } }: Params) {
         title={intl.formatMessage({ id: 'subject_list_title_title' })}
         description={intl.formatMessage({ id: 'subject_list_title_description' })}
       />
-      <SubjectList intl={intl} />
+      <SubjectList />
       <Pagination steps={research_setting_steps} current_step='subject_list' />
     </main>
   );
